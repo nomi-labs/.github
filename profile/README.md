@@ -1,170 +1,154 @@
-# Nomi Labs
+<div align="center">
 
-**Building the infrastructure for AI agents.**
+<br>
 
-Nomi Labs is an open ecosystem focused on developing the next generation
-of AI-powered systems.\
-Our mission is to provide the infrastructure needed to build intelligent
-agents, automate complex workflows, and enable developers to create
-powerful AI-driven applications.
+# · nomi ·
 
-The Nomi ecosystem combines a lightweight LLM execution engine with
-modular platforms that enable scalable AI software.
+### Personal intelligence that truly knows you.
 
-------------------------------------------------------------------------
+*An open ecosystem building AI infrastructure that remembers,*
+*learns, and grows more valuable with every conversation.*
 
-## 🚀 Vision
+<br>
 
-We believe the future of software will be powered by **autonomous AI
-agents** that can:
+</div>
 
--   reason over complex tasks
--   interact with tools and services
--   collaborate with other agents
--   automate real-world workflows
+---
 
-Nomi Labs aims to build the foundational infrastructure that makes this
-possible.
+## 💡 Why Nomi
 
-------------------------------------------------------------------------
+Every AI assistant today starts from zero.
+New conversation. No memory. No context. No continuity.
 
-## 🧠 Nomi Ecosystem
+We believe this is the wrong model.
 
-The Nomi ecosystem is built as a modular architecture separating **core
-infrastructure** from **AI applications**.
+A personal AI should work the way a trusted collaborator does —
+accumulating context over time, understanding your goals, and becoming
+genuinely more useful the longer you work together.
 
-    Nomi Ecosystem
-    │
-    ├── nomi-core
-    │   LLM execution engine
-    │
-    ├── nomi-biseo
-    │   AI assistant platform
-    │
-    └── future projects
-        agent systems
-        AI automation tools
-        developer infrastructure
+> **Nomi is the infrastructure for that future.**
 
-------------------------------------------------------------------------
+<br>
 
-## 📦 Core Projects
+---
 
-### Nomi Core
+## 🏗️ The Ecosystem
 
-The execution engine that powers the entire Nomi ecosystem.
+Nomi follows a layered architecture. Each layer has one responsibility.
 
-Key responsibilities:
+```
+╔══════════════════════════════════════════╗
+║           nomi-company  (future)         ║
+║      Organizational AI  ·  Multi-Agent   ║
+╠══════════════════════════════════════════╣
+║               nomi-biseo                 ║
+║          Personal AI Assistant           ║
+║    Memory  ·  Goals  ·  Context          ║
+╠══════════════════════════════════════════╣
+║               nomi-core                  ║
+║           AI Execution Engine            ║
+║   LLM Adapters  ·  Retry  ·  Costs       ║
+╚══════════════════════════════════════════╝
+```
 
--   LLM execution runtime
--   AI workflow orchestration
--   tool execution system
--   model abstraction layer
--   agent execution environment
+<br>
 
-Nomi Core provides the **foundation for building AI agents and
-intelligent automation systems**.
+### ⚙️ `nomi-core` — AI Execution Engine
 
-------------------------------------------------------------------------
+The unified runtime that powers every AI operation in the ecosystem.
 
-### Nomi Biseo
+| | Responsibility | Detail |
+| --- | --- | --- |
+| 🔌 | LLM Abstraction | Gemini, OpenAI, Anthropic — unified interface |
+| 🛡️ | Reliability | Retry logic and fault tolerance |
+| ✅ | Validation | Structured output via Zod |
+| 📊 | Observability | Per-user, per-feature cost tracking |
 
-An AI assistant platform built on top of Nomi Core.
+All AI providers are accessed exclusively through this layer —
+ensuring consistency and full traceability across the system.
 
-Nomi Biseo focuses on real-world AI applications including:
+<br>
 
--   AI-powered assistants
--   task automation
--   productivity workflows
--   service integrations
+### 🧠 `nomi-biseo` — Personal AI Assistant
 
-This project demonstrates how the Nomi platform can power real AI
-products.
+The product layer that understands the user.
 
-------------------------------------------------------------------------
+| | Capability | Detail |
+| --- | --- | --- |
+| 💾 | Persistent Memory | Retains context across all conversations |
+| 🎯 | Personal Context | Goals, habits, preferences, ongoing projects |
+| 🔍 | Semantic Retrieval | Surfaces the right memory at the right moment |
+| ✨ | Proactive Intelligence | Connects dots, spots patterns, follows up |
 
-## 🏗 Architecture
+**`nomi-biseo`** decides *what* needs to happen.
+**`nomi-core`** handles *how* the AI executes it.
 
-The Nomi ecosystem follows a layered architecture.
+<br>
 
-    Applications
-       │
-       └── Nomi Biseo
-            │
-    Platform Layer
-            │
-            └── AI Agents / Workflow Systems
-                 │
-    Core Engine
-            │
-            └── Nomi Core
-                 │
-                 └── LLM Providers
+### 🤖 `nomi-company` — Multi-Agent Intelligence *(future)*
 
-This design ensures that applications remain modular and extensible
-while relying on a stable AI execution engine.
+An organizational AI layer where specialized agents collaborate
+to perform complex reasoning, planning, and decision-making at scale.
 
-------------------------------------------------------------------------
+<br>
 
-## 🛠 Future Projects
+---
 
-Planned ecosystem expansions include:
+## 📦 Repositories
 
--   **nomi-agents** -- multi-agent framework
--   **nomi-tools** -- tool integration system
--   **nomi-workflows** -- AI workflow orchestration
--   **nomi-examples** -- example AI applications
--   **nomi-docs** -- official documentation
+| Repository | Purpose | Status |
+| --- | --- | --- |
+| [`nomi`](https://github.com/nomi-labs/nomi) | Ecosystem docs and local development | 🔨 Active |
+| `nomi-shared` | Shared types, schemas, and contracts | 🔨 Building |
+| `nomi-core` | AI execution engine — NestJS microservice | 🔨 Building |
+| `nomi-biseo` | Personal AI assistant | 📋 Planned |
+| `nomi-company` | Multi-agent AI layer | 🔮 Future |
 
-These projects will extend the capabilities of the Nomi platform.
+<br>
 
-------------------------------------------------------------------------
+---
 
-## 🌍 Contributing
+<br>
 
-We welcome contributions from developers interested in:
+## 🛠️ Technology Stack
 
--   AI infrastructure
--   agent frameworks
--   automation systems
--   developer tooling
+| | Layer | Technology |
+| --- | --- | --- |
+| 📝 | Language | TypeScript |
+| 🏛️ | Framework | NestJS |
+| 🤖 | AI SDK | Vercel AI SDK |
+| 🌟 | LLM Provider | Google Gemini |
+| 🔐 | Schema Validation | Zod |
+| 🗄️ | Database | PostgreSQL + pgvector |
+| ⚡ | Cache | Redis |
+| 🐳 | Local Development | Docker Compose |
 
-If you would like to contribute:
+<br>
 
-1.  Explore the repositories
-2.  Open issues for discussion
-3.  Submit pull requests
+---
 
-------------------------------------------------------------------------
+<br>
 
-## 📈 Roadmap
+## 🧭 Design Principles
 
-Short-term goals:
+🧠 **Memory First** — Context and personalization are first-class architectural concerns.
 
--   Stabilize Nomi Core runtime
--   Expand Nomi Biseo capabilities
--   Improve developer documentation
+⚙️ **Single AI Engine** — One execution layer powers the entire ecosystem.
 
-Long-term goals:
+🔭 **Full Observability** — Every AI request is traceable by user, feature, and cost.
 
--   multi-agent collaboration framework
--   autonomous workflow automation
--   scalable AI platform infrastructure
+🔄 **Provider Independence** — LLM providers can be swapped without touching product logic.
 
-------------------------------------------------------------------------
+✨ **Simplicity for Users** — Complex infrastructure. Simple, personal experience.
 
-## 📄 License
+<br>
 
-Each repository in the Nomi ecosystem may define its own license.\
-Please check individual repositories for details.
+---
 
-------------------------------------------------------------------------
+<br>
 
-## 🔗 Links
+<div align="center">
 
-GitHub Organization: https://github.com/nomi-labs
+Built with intention by **nomi-labs**
 
-------------------------------------------------------------------------
-
-**Nomi Labs**\
-*Building the future infrastructure for AI agents.*
+</div>
