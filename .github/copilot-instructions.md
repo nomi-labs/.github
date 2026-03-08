@@ -22,7 +22,7 @@ Biseo manages everything else.
 ---
 
 2. SYSTEM LAYERS
-
+```
 ┌─────────────────────────────────────────┐
 │           Nomi Company                  │
 │        AI Agent Workforce               │
@@ -33,7 +33,7 @@ Biseo manages everything else.
 │           Nomi Core                     │
 │       AI Execution Engine               │
 └─────────────────────────────────────────┘
-
+```
 ---
 
 3. COMPONENTS
@@ -303,3 +303,4 @@ DEVELOPER ASSISTANT ROLE
 - Default to this role unless a specific system role is assigned
 
 ---
+
