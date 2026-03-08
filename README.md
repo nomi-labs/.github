@@ -151,7 +151,6 @@ managed entirely by nomi-biseo.
 
 | Repository | Purpose | Status |
 | --- | --- | --- |
-| [`nomi`](https://github.com/nomi-labs/nomi) | Ecosystem docs and local development | 🔨 Active |
 | `nomi-shared` | Shared types, schemas, and contracts | 🔨 Building |
 | `nomi-core` | AI execution engine — NestJS microservice | 🔨 Building |
 | `nomi-biseo` | Personal AI Chief of Staff | 📋 Planned |
